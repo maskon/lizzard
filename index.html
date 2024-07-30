@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>lizzard</title>
+</head>
+<body>
+    <div class="game">
+        <div class="game_score">
+            <img src="img/coin.png" alt="">
+            <span class="game_coin" id="coin">0</span>
+        </div>
+        <div class="game_progress">
+            <div class="game_progress_item">
+                <div id="rank" class="game_progress_rank">Новичок</div>
+                <div class="game_progress_number">
+                    <span id="level">1</span>
+                    <span>/</span>
+                    <span>10</span>
+                </div>
+            </div>
+            <div class="game_progress_bar">
+                <div class="game_progress_max-bar"></div>
+            </div>
+            
+        </div>
+        <div class="game_frog" id="gameel">
+            <img id="frog" src="img/frog.png" alt="">
+        </div>
+        <div class="game_total">
+            <div class="game_total_item">
+               <img src="img/free-icon-flash-252590.png" alt="">
+                <div class="game_text">
+                    <span id="total">990</span>
+                    <span>/</span>
+                    <span id="total-all">1000</span>
+                </div>
+            </div>   
+            <div class="game_boost">Ускорить</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

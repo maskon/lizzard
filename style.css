@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+body {
+/*    height: 100vh;*/
+    font-family: "Marmelad", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    background: #1c1f24;
+    color: #fff;
+    user-select: none;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+/*    max-width: 500px;*/
+    margin: auto;
+}
+
+.game_score {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.game_score img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.game_coin {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.game_progress {
+/*    max-width: 400px;*/
+}
+
+.game_progress_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.game_progress_bar {
+    position: relative;
+    width: 300px;
+    height: 10px;
+    background-color: #494949;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.game_progress_max-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
+    width: 1px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.game_frog {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.game_frog img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.game_number {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 700;
+    color: orange;
+    opacity: 0;
+    animation: opasity 1s infinite ease-in-out;
+    animation-iteration-count: 1;
+    --top: 100;
+    --left: 130;
+}
+
+@keyframes opasity {
+    0% {
+        opacity: 1;
+        top: calc(var(--top) * 1px);
+        left: calc(var(--left) * 1px);
+    }
+    100% {
+        opacity: 0;
+        top: calc((var(--top) - 150) * 1px);
+        left: calc(var(--left) * 1px);
+    }
+}
+
+.game_total {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game_total_item {
+    display: flex;
+    align-items: center;
+}
+
+.game_total img {
+    width: 40px;
+    height: 40px;
+    margin-right: 2px;
+}
+
+.game_text {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
