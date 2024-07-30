@@ -34,7 +34,12 @@ function renderScore(e) {
         scoreTotal = 1
     } else {
         score++
-        coin.innerHTML = score
+        
+        const scoreLocaleString = score.toLocaleString('ru-RU', {
+            minimumFractionDigits: 0,      
+            maximumFractionDigits: 0,
+        })
+        coin.innerHTML = scoreLocaleString
         
         let widthNumber = 300
         
